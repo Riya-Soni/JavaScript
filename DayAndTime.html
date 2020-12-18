@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <p> Here is the day and date:</p>
+    <p id="demo"></p>
+
+    <script>
+        var d = new Date();
+        //get day
+        var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+        var hour = d.getHours();
+        if(hour<12){
+            document.getElementById("demo").innerHTML = "Today is: "+days[d.getDay()]+"<br>"+
+            "current Time is: "+d.getHours()+"AM:"+d.getMinutes()+":"+d.getSeconds()
+        }
+        else{
+            document.getElementById("demo").innerHTML = "Today is: "+days[d.getDay()]+"<br>"+
+            "current Time is: "+d.getHours()+":"+d.getMinutes()+":"+d.getSeconds()
+        }    
+    </script>
+
+</body>
+</html>
