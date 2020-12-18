@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Output for apply method</h2>
+    <p id="demo"></p>
+    <script>
+        // apply take array arguments as parameters
+        var person = {
+          fullName: function(city, country) {
+            return this.firstName + " " + this.lastName + "," + city + "," + country;
+          }
+        }
+        var person1 = {
+          firstName:"mary",
+          lastName: "kom"
+        }
+        var x = person.fullName.apply(person1, ["delhi", "India"]); 
+        document.getElementById("demo").innerHTML = x; 
+        </script>
+</body>
+</html>

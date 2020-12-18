@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <p> Here is the day and date:</p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <script>
+        var d = new Date();
+        var year = d.getFullYear();
+        var mon = d.getMonth()+1;
+        var dateNum = d.getDate();
+
+        document.getElementById("demo1").innerHTML = "Date format(mm-dd-yyyy): "+mon+"-"+dateNum+"-"+year; 
+        document.getElementById("demo2").innerHTML = "Date format(mm/dd/yyyy): "+mon+"/"+dateNum+"/"+year;          
+        document.getElementById("demo3").innerHTML = "Date format(dd-mm-yyyy): "+dateNum+"-"+mon+"-"+year;
+        document.getElementById("demo4").innerHTML = "Date format(dd/mm/yyyy): "+dateNum+"/"+mon+"/"+year;
+    </script>
+
+</body>
+</html>
