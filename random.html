@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h5 id="demo"></h5>
+    <h5 id="demo1"></h5>
+    <p id="demo2"></p>
+    <script>
+        //getting random no.
+        const number = [1,2,3,4,5,6,7,8,9,10];
+        const random = Math.floor(Math.random() * number.length);
+        document.getElementById("demo").innerHTML = "Random number taken: "+random
+        
+        //taking input in prompt
+        var input = prompt("Please enter a number btw", "");
+        document.getElementById("demo1").innerHTML = "input no.: "+input;
+        
+        if (input == random) {
+            document.getElementById("demo2").innerHTML = "Gookwork";
+        } else {
+            document.getElementById("demo2").innerHTML = "Not Matched";
+        }
+    </script>
+</body>
+</html>
